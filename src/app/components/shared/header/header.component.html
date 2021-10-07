@@ -1,0 +1,68 @@
+<div class="cont">
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <img [src]="src" alt="angular-logo" style="height: 10%; width: 10%" />
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="side">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" style="color: white" href="#" routerLink="/home"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              style="color: white"
+              href="#"
+              routerLink="/about"
+              >About</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              style="color: white"
+              href="#"
+              routerLink="/contact"
+              >Contact</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              style="color: white"
+              href="#"
+              routerLink="/products"
+              >Products</a
+            >
+          </li>
+        </ul>
+
+        <ul class="navbar-nav me-4 text-reset">
+          <li class="nav-item active pull-right">
+            <a
+              class="nav-link"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              href="#"
+              style="color: white"
+              ><fa-icon [icon]="faCartPlus" style="font-size: 30px"></fa-icon
+              ><span class="cart-items ml-2">(0)</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>

@@ -1,0 +1,88 @@
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Your Cart</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="cart-body">
+          <!-- <table class="table">
+        <thead class="thead-light">
+            <tr>
+                <th>Item Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total Price</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody *ngFor="let item of cart">    
+          <tr>
+              <td>{{item.productName}}</td>
+              <td>{{item.productPrice}}</td>
+              <td>{{item.productQuantity}}</td>
+              <td>{{item.productQuantity*item.productPrice}}</td>
+              <td><button class="btn btn-danger">Remove</button></td>
+          </tr>
+      </tbody>
+      <tr>
+        <td class="text-right font-weight-bold" colspan="5">Total Price : <i class="fas fa-rupee-sign ml-2"></i>{{totalPrice}}</td>
+      </tr>
+      </table> -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary checkout-btn">
+          Checkout
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <button class="btn btn-danger" (click)="loadProducts()">Click</button>  -->
+
+<div class="container" style="padding: 12px; background: none">
+  <div class="row">
+    <div class="col-4" *ngFor="let prd of products.products">
+      <div class="card">
+        <div class="card-body" style="border-color: black">
+          <h5 class="card-text" style="text-align: center">
+            Title : {{ prd.title }}
+          </h5>
+          <p class="card-title"><strong>Id :</strong> {{ prd.id }}</p>
+          <p class="card-text"><strong>Price :</strong> {{ prd.price }} Rs.</p>
+          <div class="img">
+            <img [src]="prd.image" alt="No Image" width="150" height="200" />
+          </div>
+          <p class="card-text">
+            <strong>Description :</strong> {{ prd.discription }}
+          </p>
+          <button
+            class="btn btn-info"
+            (click)="addToCart(prd.id, prd.title, prd.price)"
+          >
+            <fa-icon [icon]="faCartPlus"></fa-icon> Add to cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <script src="../assets/sc/script.js"></script> -->

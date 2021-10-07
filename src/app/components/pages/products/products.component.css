@@ -1,0 +1,95 @@
+/* body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card{
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color:greenyellow;
+    margin-top: 30px;
+}
+.form-group{
+    width: 100%;
+    margin-bottom: 12px;
+}
+.form-group label{
+    display: block;
+}
+.form-control{
+    width: 100%;
+    padding: 13px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border:1px solid black
+
+}
+.btn{
+    padding: 14px 20px;
+    border-style: none;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.btn-success{
+    background-color: rgb(33, 146, 5);
+    color: #fff;
+} */
+
+:root {
+  --color-one: #e6e6ff;
+  --color-two: #1a1aff;
+  --color-three: #b3b3ff;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  background-color: var(--color-one);
+  font-size: 0.95em;
+  color: #222;
+  border-color: #222;
+}
+
+/* .container {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  } */
+
+.card {
+  height: auto;
+  width: 300px;
+  margin-top: 40px;
+  margin-left: 30px;
+  box-shadow: 2px 2px 3px 1px rgb(20, 195, 195);
+  transition: border 0.1s, transform 0.3s;
+}
+
+.card:hover {
+  border: 1px solid var(--color-two);
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+.card .card-body h2 {
+  color: var(--color-two);
+}
+
+.card img:hover {
+  opacity: 0.6;
+}
+
+.card-p {
+  color: var(--color-three);
+}
+
+.card-p i {
+  color: var(--color-two);
+  margin-right: 8px;
+}

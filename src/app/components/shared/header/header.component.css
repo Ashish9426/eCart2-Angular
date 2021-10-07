@@ -1,0 +1,11 @@
+.cont {
+  height: 50px;
+  width: 100%;
+  background-color: burlywood;
+  margin: auto;
+}
+.side {
+  margin-left: 50%;
+  width: auto;
+  background: none;
+}
